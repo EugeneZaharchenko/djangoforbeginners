@@ -6,7 +6,7 @@
 <p>There are {{ inventory_list|length }} items of inventory.
 <ul>
  {% for item in inventory_list %}
- <li>{{ item }}</li>
+ <li>{{ item| upper }}</li>
  {% endfor %}
 </ul>
 <p>{{ greeting| title }}</p>
